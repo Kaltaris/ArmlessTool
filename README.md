@@ -4182,34 +4182,6 @@ end)
 
 
 
-------------- thông------------
-sections.MainSection1:Divider()
-
-sections.Main2Section1:Header({
-	Text = "•1Ngày - 3.000 •3Ngày - 9.000 •7Ngày - 18.000 •1Tháng - 69.000!"
-})
-
-sections.MainSection1:Header({
-	Text = "Lưu ý Nút Ẩn UI Sẽ Lưu Vị Trí Nên Bạn Hãy Nó Đến Một Nên Thích Hợp Nhé!"
-})
-
-sections.MainSection1:Paragraph({
-	Header = "Cập Nhật Chính",
-	Body = "Update Sửa Lỗi Và Thêm ▷Aimbot ▷Đồ Họa ▷Universal"
-})
-
-sections.Main2Section1:Paragraph({
-	Header = "Cập Nhật Phụ",
-	Body = "✔Update• +Visual 【•SpeedHack •Nhảy Cao •Nhảy liên tục •Xuyên tường •Lơ lửng trên không •Trọng lực •Chống Afk •Phạm vi quan sát •Click dịch chuyển •Mở giới hạn camera •Camera xuyên •Nhìn xuyên】 ✔Update 【+Player •Free +7 Animation •Spin •Bay lơ lửng】"
-})
-
-sections.MainSection1:Label({
-	Text = "VIP Ver•1.2"
-})
-
-sections.MainSection1:SubLabel({
-	Text = "Ui Mac share và được thêm những chức năng tự code độc quyền."
-})
 
 MacLib:SetFolder("Maclib")
 tabs.Settings:InsertConfigSection("Left")
