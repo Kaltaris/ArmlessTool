@@ -55,7 +55,6 @@ local tabGroups = {
 }
 
 local tabs = {
-	Main = tabGroups.TabGroup1:Tab({ Name = "Thông báo Update", Image = "rbxassetid://81478297548754" }),
 	Esp = tabGroups.TabGroup1:Tab({ Name = "MainUsing", Image = "rbxassetid://84727577248856" }),
 	EspM = tabGroups.TabGroup1:Tab({ Name = "EspM", Image = "rbxassetid://84727577248856" }),
 	Aim = tabGroups.TabGroup1:Tab({ Name = "Aimbot", Image = "rbxassetid://130939958971532" }),
@@ -66,8 +65,6 @@ local tabs = {
 }
 
 local sections = {
-	MainSection1 = tabs.Main:Section({ Side = "Left" }),
-	Main2Section1 = tabs.Main:Section({ Side = "Right" }),
 	EspSection1 = tabs.Esp:Section({ Side = "Left" }),
 	Esp2Section1 = tabs.Esp:Section({ Side = "Right" }),
 	EspMSection1 = tabs.EspM:Section({ Side = "Left" }),
@@ -4179,8 +4176,6 @@ UserInputService.InputChanged:Connect(function(input)
     end
 end)
 ----------------------------------------------------------
-
-
 
 
 MacLib:SetFolder("Maclib")
