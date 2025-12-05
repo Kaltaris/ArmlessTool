@@ -1897,7 +1897,7 @@ sections.EspSection1:Slider({
     Name = "Tốc Độ Speed",
     Default = 50,
     Minimum = 16,
-    Maximum = 5000, -- Đã tăng maximum lên 5000
+    Maximum = 7000, -- Đã tăng maximum lên 5000
     DisplayMethod = "Value",
     Precision = 0,
     Callback = function(Value)
@@ -2312,12 +2312,12 @@ player.CharacterAdded:Connect(function()
     end
 end)
 -------------------------
-local antiAFKEnabled = false
+local antiAFKEnabled = true
 
 -- Toggle UI với tên tiếng Việt
 sections.Pla2Section1:Toggle({
     Name = "Chống AFK",
-    Default = false,
+    Default = true,
     Callback = function(Value)
         antiAFKEnabled = Value
         
@@ -2370,7 +2370,7 @@ sections.Uni2Section1:Toggle({
 }, "FOVToggle")
 
 -- FOV Slider
-sections.Uni2Section1:Slider({
+sections.Esp2Section1:Slider({
     Name = "Điều Chỉnh Tầm",
     Default = 70,
     Minimum = 1,
@@ -2430,7 +2430,7 @@ local UserSettings = UserSettings()
 local GameSettings = UserSettings.GameSettings
 
 -- Unlock Camera Distance Toggle
-sections.Uni2Section1:Toggle({
+sections.Esp2Section1:Toggle({
     Name = "Mở Giới Hạn Camera",
     Default = false,
     Callback = function(Value)
@@ -2467,7 +2467,7 @@ sections.Uni2Section1:Toggle({
 }, "UnlockCamDistToggle")
 ---------------------
 ---------------------
-sections.Uni2Section1:Paragraph({
+sections.UniSection1:Paragraph({
 	Header = "Máy Yếu Bị Cân Nhắc Bật",
 	Body = "X-Ray Dễ Dàng Nhìn Xuyên"
 })
@@ -2477,7 +2477,7 @@ local Players = game:GetService("Players")
 local xrayEnabled = false
 
 -- X-Ray Toggle
-sections.Uni2Section1:Toggle({
+sections.UniSection1:Toggle({
     Name = "Nhìn Xuyên Tường",
     Default = false,
     Callback = function(Value)
@@ -2525,7 +2525,7 @@ local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
 -- Invisicam Toggle
-sections.Uni2Section1:Toggle({
+sections.UniSection1:Toggle({
     Name = "Camera Xuyên Tường",
     Default = false,
     Callback = function(Value)
